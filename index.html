@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Moving ROVER
+	</title>
+<style>
+body{
+	background-image: url("mars.gif");
+    background-position: center;
+    background-size: cover;
+}
+#myCanvas
+{
+	border-width:10px;
+	background-color: white; 
+	border-style:ridge;
+}
+
+h1,h4
+{
+	color: white !important;
+}
+#player{
+	border-style: double;
+	border-width: 10px;
+	background-color: whitesmoke;
+}
+</style>		
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<title>Moving Rover On</title>
+</head>
+<body onload="add()">
+<center>
+<h3 style="background-position-x: 40px;background-position-y: 20px;text-align: left; padding-left: 20px;">
+	<a class="text-success">
+		<b>
+			<code>
+				score=<kbd id="scoreboard"></kbd>
+			</code>
+		</b>
+	</a>
+</h3>
+<h1>Moving Rover On Mars</h1>
+<canvas id="player" height="600" width="800">
+</canvas>
+<h4>
+	<a class="text-danger"><b>NOTE : </b></a> IF ROVER IS NOT VISIABLE PRESS ANY ARROW KEY.
+</h4>
+
+</center>
+<script src="main.js">
+</script>
+</body>
+</html>
